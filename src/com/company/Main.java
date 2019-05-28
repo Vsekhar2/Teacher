@@ -78,12 +78,18 @@ public class Main {
     //Create Sections
     public static void createSections() {
 
-        for (int i = 0; i < NUMBER_OF_SECTIONS; i++) {
+        for (int j = 6; j <= 10; j++) {
 
-            mySections.add(new Section(indexToSectionNumber.get(i)));
+            for (int i = 0; i < NUMBER_OF_SECTIONS; i++) {
+
+                mySections.add(new Section(indexToSectionNumber.get(i), j));
+
+
+            }
 
 
         }
+
 
 
 

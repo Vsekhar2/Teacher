@@ -6,7 +6,7 @@ import java.util.HashMap;
 public class Section {
 
     public ArrayList<String> sectionTeachers = new ArrayList<>();
-
+    private int grade;
 
 
     private char sectionNumber;
@@ -30,9 +30,12 @@ public class Section {
   // public String[] subjects = {tamilTeacher, englishTeacher, mathTeacher, scienceTeacher, socialScienceTeacher, gamesTeacher};
 
 
-    Section(char mySectionNumber) {
+
+
+    Section(char mySectionNumber, int myGrade) {
 
         sectionNumber = mySectionNumber;
+        grade = myGrade;
 
         for (int i = 0; i < 7; i++) {
 
@@ -123,5 +126,14 @@ public class Section {
     public void setGamesTeacher(String gamesTeacher) {
 
         sectionTeachers.set(5, gamesTeacher);
+    }
+
+    //Grade
+    public int getGrade() {
+        return grade;
+    }
+
+    public void setGrade(int grade) {
+        this.grade = grade;
     }
 }

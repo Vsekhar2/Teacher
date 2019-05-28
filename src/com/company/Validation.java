@@ -12,9 +12,23 @@ public class Validation {
 
         ArrayList<Section> availableSections = new ArrayList<>();
 
+        //sections in available Grade:
+        for (Section currentSection: sections) {
+
+            for (int i = 0; i < myTeacher.getTeachableGrades().length; i++) {
+
+                if (currentSection.getGrade() == myTeacher.getTeachableGrades()[i]) {
+
+                    availableSections.add(currentSection);
+                }
+
+            }
+
+
+        }
 
         //Loop Through Each Section and Add the Available Sections
-        for (Section currentSection: sections) {
+        for (Section currentSection: availableSections) {
 
 
             if (currentSection.sectionTeachers.get(Main.subjectToIndex.get(myTeacher.getSubject())) == "") {
@@ -34,20 +48,22 @@ public class Validation {
 
         ArrayList<Section> availableSections = new ArrayList<>();
 
-
-        //Loop Through Each Section and Add the Available Sections
+        //sections in available Grade:
         for (Section currentSection: sections) {
 
+            for (int i = 0; i < myTeacher.getTeachableGrades().length; i++) {
 
-            if (currentSection.sectionTeachers.get(Main.subjectToIndex.get(myTeacher.getSubject())) == "") {
+                if (currentSection.getGrade() == myTeacher.getTeachableGrades()[i] && currentSection.sectionTeachers.get(Main.subjectToIndex.get(myTeacher.getSubject())) == "") {
 
-                availableSections.add(currentSection);
-
-
+                    availableSections.add(currentSection);
+                }
 
             }
 
+
         }
+
+
         return availableSections;
 
 

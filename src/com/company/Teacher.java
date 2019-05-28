@@ -37,10 +37,23 @@ public class Teacher {
 
         for (int i = 0; i < teachableGrades.length; i++) {
 
-            System.out.print(teachableGrades[i]);
+            System.out.print(teachableGrades[i] + " ");
 
 
         }
+
+
+
+    }
+
+
+    public void checkAvailableSections() {
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,68 @@
+Input:
+---------------------------------------------------------------
+Teacher Name: Paramesh Sekhar
+Subject: Math
+Classroom Teacher: T/F
+Grades Teachable: Enum {6, 7, 8, 9, 10}
+Number of Periods Required per day by students: 8 Required Periods
+Number of Periods Required per Week: 28
+Average number of periods per day: 4
+----------------------------------------------------------------
+
+
+Data Matrix:
+
+Grades/Sections: 
+Each Section: 40 students
+6 {A, B, C D, E, F G}
+     Subjects for Each Section: 
+	8 Periods:	
+	   1.Tamil
+	   2.English
+	   3.Math
+	   4.Science
+	   5.Social Science
+           6.Lunch
+           7.Games
+	   8.Value Education
+	 
+7 {A, B, C, D, E, F, G}
+8 {A, B, C, D, E, F, G}
+9 {A, B, C, D, E, F, G}
+10 {A, B, C, D, E, F, G}
+
+
+Sample Output:
+
+
+
+Name: Paramesh Sekhar
+Subject: Math
+Teaching 8th Grade, Section F (Weekly 7 times)
+Teaching 7th Grade, Section C (Weekly 7 Times)
+Teaching 6th Grade, Section C (Weekly 7 Times)
+Teaching 6th Grade, Section F (Weekly 7 Times)
+
+Every Teacher = 4 Sections & 1 Subject
+
+Teaching 6th Grade, Section F (Weekly 1 Times) : Value Education
+
+Weekly 28 Times
+
+
+
+
+  M       T     W   TH   F
+
+(1,2)| (3,4)| (5)| (3)| (2)
+
+
+
+
+
+
+
+
+
+
+

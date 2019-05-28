@@ -9,8 +9,22 @@ public class Teacher {
     private boolean classRoomTeacher;
     private int[] teachableGrades;
 
+
+
     private final int MINIMUM_PERIODS_PER_WEEK = 7;
     private final int MINIMUM_NUMBER_OF_SECTIONS = 4;
+
+    /*
+
+        Tamil  = 0
+        English = 1
+        Math = 3
+        Science = 4
+        Social Science = 5
+        Games = 6
+
+
+  */
 
 
     //Constructor
@@ -42,29 +56,25 @@ public class Teacher {
 
         }
 
-
-
     }
 
 
-    public void checkAvailableSections() {
-
-
-
-
-
-
-
-
-
+    //GETTERS AND SETTERS
+    public String getName() {
+        return name;
     }
 
+    public String getSubject() {
+        return subject;
+    }
 
+    public boolean isClassRoomTeacher() {
+        return classRoomTeacher;
+    }
 
-
-
-
-
+    public int[] getTeachableGrades() {
+        return teachableGrades;
+    }
 
 
 

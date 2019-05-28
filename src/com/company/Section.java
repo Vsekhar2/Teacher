@@ -1,34 +1,59 @@
 package com.company;
+import java.util.ArrayList;
+import java.util.HashMap;
+
 
 public class Section {
 
+    public ArrayList<String> sectionTeachers = new ArrayList<>();
+
+
+
     private char sectionNumber;
 
-    private String tamilTeacher;
-    private String englishTeacher;
-    private String mathTeacher;
-    private String scienceTeacher;
-    private String socialScienceTeacher;
-    private String gamesTeacher;
+
+
+    /*
+
+    Tamil  = 0
+    English = 1
+    Math = 3
+    Science = 4
+    Social Science = 5
+    Games = 6
+
+
+
+
+  */
+
+  // public String[] subjects = {tamilTeacher, englishTeacher, mathTeacher, scienceTeacher, socialScienceTeacher, gamesTeacher};
 
 
     Section(char mySectionNumber) {
 
         sectionNumber = mySectionNumber;
 
+        for (int i = 0; i < 7; i++) {
+
+           sectionTeachers.add(i, "");
 
 
+
+
+        }
 
     }
 
 
 
-
-
-
-
     //GETTERS & Setters
+
+
+
+    //SECTION NUMBER
     public char getSectionNumber() {
+
         return sectionNumber;
     }
 
@@ -36,51 +61,67 @@ public class Section {
         this.sectionNumber = sectionNumber;
     }
 
+
+
+    //TAMIL TEACHER
     public String getTamilTeacher() {
-        return tamilTeacher;
+
+        return sectionTeachers.get(0);
     }
 
     public void setTamilTeacher(String tamilTeacher) {
-        this.tamilTeacher = tamilTeacher;
+        sectionTeachers.set(0, tamilTeacher);
     }
 
+
+
+    //ENGLISH TEACHER
     public String getEnglishTeacher() {
-        return englishTeacher;
+        return sectionTeachers.get(1);
     }
 
     public void setEnglishTeacher(String englishTeacher) {
-        this.englishTeacher = englishTeacher;
+        sectionTeachers.set(1, englishTeacher);
     }
 
+    //MATH TEACHER
     public String getMathTeacher() {
-        return mathTeacher;
+        return sectionTeachers.get(2);
     }
 
     public void setMathTeacher(String mathTeacher) {
-        this.mathTeacher = mathTeacher;
+        sectionTeachers.set(2, mathTeacher);
     }
 
+    //SCIENCE TEACHER
     public String getScienceTeacher() {
-        return scienceTeacher;
+        return sectionTeachers.get(3);
     }
 
     public void setScienceTeacher(String scienceTeacher) {
-        this.scienceTeacher = scienceTeacher;
+
+        sectionTeachers.set(3, scienceTeacher);
     }
 
+
+    //SOCIAL SCIENCE TEACHER
     public String getSocialScienceTeacher() {
-        return socialScienceTeacher;
+
+        return sectionTeachers.get(4);
     }
 
     public void setSocialScienceTeacher(String socialScienceTeacher) {
-        this.socialScienceTeacher = socialScienceTeacher;
+        sectionTeachers.set(4, socialScienceTeacher);
     }
 
+    //GAMES TEACHER
     public String getGamesTeacher() {
-        return gamesTeacher;
+
+        return sectionTeachers.get(5);
     }
 
     public void setGamesTeacher(String gamesTeacher) {
-        this.gamesTeacher = gamesTeacher;
+
+        sectionTeachers.set(5, gamesTeacher);
     }
 }
